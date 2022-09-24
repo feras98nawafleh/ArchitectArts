@@ -1,0 +1,63 @@
+- var pageTitl = "contcat";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start Contcat-info
+    section.Contcat-info
+      .box-contact
+        .container
+          .row
+            .col-lg-6.right
+              .form
+                form
+                  .form-group
+                    label(for='exampleInputEmail1') الاسم
+                    input.form-control(type='text', id='', aria-describedby='emailHelp')
+                  
+                  .form-group
+                    label(for='exampleInputEmail1') الايميل
+                    input.form-control(type='email', id='', aria-describedby='emailHelp')
+                  .form-group
+                    label(for='exampleInputEmail1') رقم الجوال
+                    input.form-control(type='text', id='', aria-describedby='emailHelp')
+                  
+                  .form-group
+                    label(for='exampleFormControlTextarea1') الموضوع
+                    textarea.form-control(id='', rows='3')
+                  button.btn.btn-default.btn-lg.btn-block(type='submit')
+                    | ارسال 
+                    i.fas.fa-paper-plane.fa-fw
+            .col-lg-6.left
+              .details
+                h3.mb-5  تواصل معنا 
+                p.mb-5
+                  | هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+                .row.ml-3.mt-3
+                  .col-sm-2
+                    i.fas.fa-map-marker-alt
+                  .col-sm-10.mb-2
+                    p بنيد القار , شارع السور, اتحاد المكاتب الهندسية والدور الاستشارية الكويتية                          
+                  .col-sm-2
+                    i.fas.fa-phone.fa-flip-horizontal
+                  .col-sm-10.mb-2
+                    p(style="direction: ltr;") +965 66923894
+                  
+                  .col-sm-2
+                    i.fas.fa-envelope
+                  .col-sm-10.mb-2
+                    p kfeoch@gmail.com
+            
+
+    // End Contcat-info
+          
+        
+    //End Map
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    include include/script.pug

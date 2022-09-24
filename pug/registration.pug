@@ -1,0 +1,49 @@
+- var pageTitl = "EngineeringOffices";
+- var pageTitlplus = "Conditions";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index.html') الرئيسية
+          li.breadcrumb-item
+            a(href='#') المكاتب الهندسية 
+          li.breadcrumb-item.active(aria-current='page') شروط التسجيل للمكاتب  
+
+    // End breadcrumb
+    // Start Contcat-info
+    section.registration-info
+      .container.content
+        .row
+          .col-lg-8
+            h4.text-center شروط التسجيل
+            h5.text.center.mb-5 المادة الخامسة من لائحة مزاولة المهنة – بلدية الكويت
+            ol 
+              li.pb-2 ن يكون حاصلاً على درجة البكالوريوس في الهندسة المعمارية أو الهندسة المدنية أو العمارة أو أحد التخصصات الهندسية التي لها علاقة بتصميم المباني والإنشاءات من جامعة معترف بها.
+              li.pb-2 ألا تقل مدة خبرته العملية في مجال المهنة عن خمس سنوات.
+              li.pb-2 أن يكون كويتي الجنسية ومقيما في الكويت إقامة مستمرة.
+              li.pb-2 أن يكون عضوا بجمعية المهندسين الكويتية.
+              li.pb-2 أن يكون متفرغا لأعمال المكتب الهندسي (متقاعد أو مسجل على الباب الخامس).
+              li.pb-2  ألا يكون مشتغلاً أو شريكاً أو يمتلك شركة مقاولات أو تجارة مواد إنشائية.
+              li.pb-2  أن يكون حسن السمعة ولم يسبق الحكم عليه في جناية أو جريمة مخلة بالشرف.
+              li.pb-2 توفير مقر للمكتب الهندسي بالأماكن المسموح فيها بمزاولة نشاطه وفقا لأنظمة البلدية
+              li.pb-2 على أن لا يتم استلام أصل رخصة المكتب الهندسي إلا بعد تسجيل صاحب المكتب الهندسي على الباب الخامس من نظام التأمينات الاجتماعية أو التقاعد وتقديم ما يفيد ذلك للبلدية.
+          .col-lg-4 
+            .image
+              img.w-100(src="img/checklist.png", alt="")
+              
+        
+    //End Map
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    include include/script.pug

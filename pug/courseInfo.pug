@@ -1,0 +1,146 @@
+- var pageTitl = "course";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index.html') الرئيسية
+          li.breadcrumb-item
+            a(href='course.html') الدورات والندوات 
+          li.breadcrumb-item.active(aria-current='page') برنامج التصميم الهندسي Revit
+
+    // End breadcrumb
+    // Start Contcat-description
+    section.course-description
+      .container
+        .row
+          .col-lg-12
+            h4.text-center.mb-5 برنامج التصميم الهندسي Revit
+            table.table
+              thead
+                tr 
+                  th.text-center 
+                    h5 
+                      i.fas.fa-filter
+                      |  	تصنيف 
+                  th.text-center 
+                    h5
+                      i.far.fa-clock
+                      |  المدة الزمنية  
+                  th.text-center 
+                    h5 
+                      i.far.fa-calendar-alt
+                      |  تاريخ انعقاد الدورة 
+                  th.text-center 
+                    h5 
+                      i.fas.fa-map-marker-alt
+                      |  	مكان الدورة
+                  th.text-center 
+                    h5 
+                      i.fas.fa-user
+                      |  الحجز 
+              tbody
+                tr
+                  td.text-center 
+                    p مدنى
+                  td.text-center 
+                    p 30 ساعة
+                  td.text-center 
+                    p 31/1/2012 - 25/3/2021
+                  td.text-center 
+                    p العاصمة 
+                  td.text-center 
+                    a.read-more(href="") احجز الان
+        
+        .row.my-5.course-description-info
+          .col-lg-3.col-sm-12.mb-3
+            #list-tab.list-group(role='tablist')
+              a#list-home-list.list-group-item.list-group-item-action.active(data-toggle='list', href='#list-home', role='tab', aria-controls='home') الوصف
+              a#list-profile-list.list-group-item.list-group-item-action(data-toggle='list', href='#list-profile', role='tab', aria-controls='profile') المساقات
+              a#list-messages-list.list-group-item.list-group-item-action(data-toggle='list', href='#list-messages', role='tab', aria-controls='messages')   ستتعلم في هذا التخصص
+              a#list-settings-list.list-group-item.list-group-item-action(data-toggle='list', href='#list-settings', role='tab', aria-controls='settings')  فريق التخصص
+          .col-lg-9.col-sm-12.mb-3
+            #nav-tabContent.tab-content
+              #list-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='list-home-list') 
+                h5.mb-3 الوصف
+                p برنامج أوتوديسك ريفيت Autodesk Revit هو برنامج نمذجة معلومات المباني للمهندسين المعماريين ومهندسي تنسيق المواقع (اللاندسكيب) والمهندسين الإنشائيين والمهندسين الالكتروميكانيك ( MEP ) والمصممين والمقاولين.
+                p يتيح برنامج أوتوديسك ريفيت للمستخدمين تصميم مبنى وهيكل ومكوناته ثلاثية الأبعاد، واضافة التعليقات وكتابة الابعاد والمسميات على المبنى وقطاعاته ولوحاته. كما يتيح الوصول إلى معلومات المبنى من قاعدة بيانات النموذج المخزنة على الخادم الخاص بالمشروع. ومن أهم مميزات البرنامج هي تقنية ال ٣D وإمكانية محاكاة التصميم ورؤيته والتجول فيه كما في أرض الواقع كمان أنك تستطيع حساب كميات العناصر التي صممتها بسرعة فائقة والقيام بكافة عمليات الـ Tagging وال Annotations بطريقة مبسطة وسريعة، ويمكن ربط البرنامج بمختلف البرامج الأخرى ومنها ال Autocad كما يمكن عمل Export للمخططات بصيغ مختلفة PDF و DWG وهو برنامج متوافق توافقا تاما مع التخصصات المختلفة :(معماري – انشائي – كهربائي – ميكانيكي) وله قدرة عالية جدا على عمل التصميمات المعمارية والانشائية مهما بلغت درجة صعوبتها وتعقيدها ومهما كان شكلها غريبا.
+                p تم تطوير البرنامج الأصلي بواسطة شركة Charles River Software ، التي تم تأسيسها في عام ١٩٩٧، ثم تم إعادة تسميتها باسم Revit Technology Corporation في عام ٢٠٠٠، والتي تم شراؤها بواسطة شركة أوتوديسك Autodesk في عام ٢٠٠٢.
+
+              #list-profile.tab-pane.fade(role='tabpanel', aria-labelledby='list-profile-list') 
+                h5  أساسيات في برنامج الـ Revit
+                p.p-3 تعلّم أساسيات في برنامج (Revit) وكيفية تصميم مبانٍ وهياكل ثلاثية الأبعاد باستخدام البرنامج، في هذه الدورة المجانية من إدراك. سجّل الآن!
+                h5 مهارات متقدمة في برنامج الـ Revit
+                p.p-3 سنتعلم مهارات متقدمة في برنامج الـ Revit كما سنتطرق الى استخدام تقنية ثلاثي الابعاد واهم المميزات لبرنامج الريفيت بطريقة مبسطة وسريعة 
+              #list-messages.tab-pane.fade(role='tabpanel', aria-labelledby='list-messages-list') 
+                h5.mb-3 ستتعلم في هذا التخصص
+                ol 
+                  li التعرف علي واجهة المستخدم
+                  li أساسيات ال Revit: كيف تنشئ ملف لمشروعك, ما هي خياراتك المختلفة و أفضلها.
+                  li كيف تقوم بتحميل ملف المعماري الخاص بمشروعك وملفات الاقسام الاخرى
+                  li كيف تقوم بانشاء ملفات العرض الخاصة بعملك (Floor Plans) وتحميل ال families التي تحتاجها بعملك
+                  li كيف تقوم بتعديل اعدادات العرض الخاصة ب (view Template) وبناء الاختصارات لل commands لتسريع طريقة عملك
+                  li كيف تقوم بانشاء مجموعات العمل (Worksets) قبل البدء بعملك
+                  li كيف تقوم بالبدء على تصميم الانظمة التي تريدها على تصميم البناء المعماري القائم (سنتحدث بالاخص عن انظمة ال Low current system
+                  li كيف تقوم بانشاء ال sheets وطباعتها
+                  li التعرف على عملية ال coordination ل ceiling plans
+                  li كيفية عمل import link لملفات الاقسام الاخرى
+                  li كيف نقوم بعملية ال copy/monitor لل grids وال levels
+                  li كيفية رسم ال cable tray بانواعها واستخدماتها والمواسير ٢D&٣D
+                  li كيفية عمل ال filters والتحكم باعدادات العرض
+                  li كيف نقوم بعمل tag (تسمية) العناصر وكتابتها بالشكل الصحيح
+                  li كيف نقوم ب انشاء Enlarged rooms (غرف مكبرة) كغرف الاتصالات
+                  li كيف نقوم بعمل export للديزاين من ريفيت ل اوتوكاد
+                  li كيف نقوم بايجاد ال clashes بين ال elements وحلها ٢D&٣D
+                  li عمل ديزاين مبسط لنظام Structured cabling network
+                  li كيف نقوم بعمل export للديزاين من ريفيت لبرنامج ال Navisworks
+
+              #list-settings.tab-pane.fade(role='tabpanel', aria-labelledby='list-settings-list') 
+                .card.mb-3
+                  .row.no-gutters
+                    .col-md-3.col-sm-12
+                      .image
+                        img.w-100(src='../img/profile.png', alt='...')
+                    .col-md-9.col-sm-12
+                      .card-body
+                        h5.card-title محمد حمد
+                        p.card-text
+                          | المهندس محمد حمد العمر ٢٨ سنة ويعمل حاليا بمجال التصميم الهندسي بقسم الكهرباء والاتصالات ولديه خبرة تزيد عن ٥ سنين بهذا المجال , يمتلك شهادات عديدة بمجال الشبكات والاتصالات وقام بتصميم مشاريع كثيرة و مختلفة في بلدان كثيرة منها الخليج وبلدان الشرق الاوسط ولديه خبرة خاصة على برنامج التصميم الهندسي الريفيت بمختلف اصداراتو
+                .card.mb-3
+                  .row.no-gutters
+                    .col-md-3.col-sm-12
+                      .image
+                        img.w-100(src='../img/profile.png', alt='...')
+                    .col-md-9.col-sm-12
+                      .card-body
+                        h5.card-title عمر بلال
+
+                        p.card-text
+                          | أخصائي تكنولوجيا المعلومات وأمن المعلومات، حاصل على العديد من الشهادات العالمية من مايكروسفت و EC-Council وسيسكو. لديه شغف في التعليم الإلكتروني ولديه العديد من الدورات على منصة يودمي. لديه خبرة كبيرة في تطوير مواقع الووردبريس وعمل التطبيقات للهواتف الذكية. يشغل منصب مدير مساقات في منصة إدراك وقام بالاشراف على هذا المساق.
+
+                        
+
+
+
+          
+          
+
+            
+
+
+              
+        
+    //End Map
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    include include/script.pug

@@ -1,0 +1,112 @@
+- var pageTitl = "EngineeringOffices";
+- var pageTitlplus = "Memberlogin";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start Contcat-info
+    section.Login-page
+      .containerz
+        .forms-container
+          .signin-signup
+            form.sign-in-form(action='#')
+              h2.title تسجيل الدخول 
+              .input-field
+                i.far.fa-building
+                select#exampleFormControlSelect1.form-control
+                  option المكاتب المحلية
+                  option المكاتب الأجنبية 
+                  option المكاتب المتخصصة 
+              .input-field
+                i.fas.fa-user
+                input(type='text', placeholder='اسم المستخدم')
+              .input-field
+                i.fas.fa-lock
+                input(type='password', placeholder='الرقم السرى')
+              .form-groub
+                a.read-more.my-3(href="#") دخول 
+              //-input.btn.solid(type='submit', value='Login')
+              //- p.social-text Or Sign in with social platforms
+              //- .social-media
+              //-   a.social-icon(href='#')
+              //-     i.fab.fa-facebook-f
+              //-   a.social-icon(href='#')
+              //-     i.fab.fa-twitter
+              //-   a.social-icon(href='#')
+              //-     i.fab.fa-google
+              //-   a.social-icon(href='#')
+              //-     i.fab.fa-linkedin-in
+            form.sign-up-form(action='#')
+              h4.title تسجيل مكتب جديد 
+              .input-field
+                i.far.fa-building
+                select#exampleFormControlSelect1.form-control
+                  option المكاتب المحلية
+                  option المكاتب الأجنبية 
+                  option المكاتب المتخصصة
+              .input-field
+                i.fas.fa-building
+                input(type='text', placeholder='اسم المكتب ')
+              .input-field
+                i.fas.fa-building
+                input(type='text', placeholder='Office Name ')
+              .input-field
+                i.fas.fa-list-ol
+                input(type='text', placeholder='رقم ترخيص')
+              .input-field
+                i.fas.fa-envelope
+                input(type='email', placeholder='البريد الالكترونى')
+              .input-field
+                i.fas.fa-lock
+                input(type='password', placeholder='الرقم التليفون ')
+              
+              .form-groub
+                a.read-more(href="#") تسجيل 
+              //-input.btn(type='submit', value='Sign up')
+              //- p.social-text Or Sign up with social platforms
+              //- .social-media
+              //-   a.social-icon(href='#')
+              //-     i.fab.fa-facebook-f
+              //-   a.social-icon(href='#')
+              //-     i.fab.fa-twitter
+              //-   a.social-icon(href='#')
+              //-     i.fab.fa-google
+              //-   a.social-icon(href='#')
+              //-     i.fab.fa-linkedin-in
+        .panels-container
+          .panel.left-panel
+            .content
+              h3 تسجيل مكتب جديد 
+              p
+                | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+                | ex ratione. Aliquid!
+              a#sign-up-btn.read-more(href="#") تسجيل مكتب 
+              //-button#sign-up-btn.btn.transparent
+                | Sign up
+            img.image(src='img/2760424-ai.png', alt='')
+          .panel.right-panel
+            .content
+              h3 تسجيل الدخول
+              p
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                | laboriosam ad deleniti.
+              a#sign-in-btn.read-more(href="#") تسجيل الدخول 
+              //-button#sign-in-btn.btn.transparent
+                | Sign in
+              
+            img.image(src='img/3293464-ai.png', alt='')
+
+            
+
+    // End Contcat-info
+          
+        
+    //End Map
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    include include/script.pug

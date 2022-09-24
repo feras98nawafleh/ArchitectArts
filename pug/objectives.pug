@@ -1,0 +1,50 @@
+- var pageTitl = "about";
+- var pageTitlplus = "objectives";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index.html') الرئيسية
+          li.breadcrumb-item
+            a(href='#') من نحن
+          li.breadcrumb-item.active(aria-current='page') الاختصاصات والأهداف    
+
+    // End breadcrumb
+    // Start Contcat-info
+    section.registration-info.about-page
+      .container.content
+        .row
+          .col-lg-8
+            h4.text-center الاختصاصات والأهداف
+            ol 
+              li.pb-2 ن يكون حاصلاً على درجة البكالوريوس في الهندسة المعمارية أو الهندسة المدنية أو العمارة أو أحد التخصصات الهندسية التي لها علاقة بتصميم المباني والإنشاءات من جامعة معترف بها.
+              li.pb-2 رعاية مصالح الأعضاء والدفاع عن حقوقهم.
+              li.pb-2 تمثيل المكاتب الهندسية والدور الاستشارية أمام الجهات الرسمية والشركات والهيئات العربية والأجنبية. 
+              li.pb-2 دارسة وإعطاء المشورة في الأمور التي يكلف بها من قبل الأعضاء . 
+              li.pb-2 الاقتراح والتنسيق مع الجهات الرسمية المعنية فيما يتعلق بنظام مزاولة المهنة أو أية أنظمة مكملة لها.
+              li.pb-2 اقتراح الأنظمة واللوائح التي تؤدي إلى رفع مستوى المهنة الهندسية . 
+              li.pb-2 السعي لدى الجهات الرسمية والشركات لمساندة ودعم المكاتب الهندسية والدور الاستشارية الكويتية عن طريق إسناد الأعمال الهندسية لها . 
+              li.pb-2 تقديم الدارسات الخاصة بالأمور المتعلقة بعمل المكاتب الهندسية والدورالاستشارية الكويتية.
+              li.pb-2 أقتراح الأنظمة واللوائح والمسابقات الهندسية. 
+              li.pb-2 تمثيل المكاتب الهندسية والدور الاستشارية في كافة اللجان المهنية والتي تتعلق بنشاط أعضاء الاتحاد.
+              li.pb-2  التعاون مع الجهات المختصة بشأن التشريعات التي تصدرها الحكومة بخصوص تنظيم أعمال المكاتب الهندسية والدور الاستشارية الكويتية والسعي لتشجيعها والحد من منافسة المكاتب العالمية الأجنبية لها.
+          .col-lg-4 
+            .image
+              img.w-100(src="img/adoption-form.png", alt="")
+              
+        
+    //End Map
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    include include/script.pug

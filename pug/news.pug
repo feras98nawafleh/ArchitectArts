@@ -1,0 +1,88 @@
+- var pageTitl = "media";
+- var pageTitlplus = "News";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index.html') الرئيسية
+          li.breadcrumb-item
+            a(href='#') الإعلام
+          li.breadcrumb-item.active(aria-current='page') اخبارنا
+
+    // End breadcrumb
+    // Start News-info
+    section.News-info
+      .container
+        .row
+          .col-lg-9
+            .box-news 
+              .row
+                .col-lg-6.col-mb-4
+                  .card
+                    img.card-img-top(src='../img/news1.png', alt='...')
+                    .card-body
+                      h5.card-title مستشفى جابر
+                      .info 
+                        span.date 
+                          i.far.fa-calendar-alt
+                          |  مارس 25, 2021
+                        span.user 
+                          i.fas.fa-user
+                          |  محمد محمود  
+                        span.tag 
+                          i.fas.fa-tags
+                          |  انشاءات 
+                      p.card-text
+                        | يتضمن المشروع المقدرة قيمته بـ 1.6 مليار دولار، إنشاء مجمع مستشفيات يمتد على مساحة 47 ألف متر مربع، 
+                      a.read-more(href="newsInfo.html") اقراء المزيد
+                .col-lg-6.col-mb-4
+                  .card
+                    img.card-img-top(src='../img/news2.png', alt='...')
+                    .card-body
+                      h5.card-title مدينة الكويت لسباقات السيارات
+                      .info 
+                        span.date 
+                          i.far.fa-calendar-alt
+                          |  مارس 25, 2021
+                        span.user 
+                          i.fas.fa-user
+                          |  محمد محمود  
+                        span.tag 
+                          i.fas.fa-tags
+                          |  انشاءات 
+                      p.card-text
+                        | مع إرثها الحضاري العريق وقوتها الاقتصادية إضافة إلى انفتاحها المتزايد على الحضارة الأوروبية، 
+                      a.read-more(href="newsInfo.html") اقراء المزيد
+          .col-lg-3
+            .aside-news 
+              .form-group
+                input.form-control(type='text', placeholder='بحث عن خبر')
+              buttom.read-more.d-block.mb-5.text-center(type="buttom") بحث
+              ul.list-group
+                li.list-group-item.d-flex.justify-content-between.align-items-center
+                  a(href="")  اخبار عامة 
+                  span.badge.badge-primary.badge-pill 14
+                li.list-group-item.d-flex.justify-content-between.align-items-center
+                  a(href="")  مناسبات
+                  span.badge.badge-primary.badge-pill 2
+                li.list-group-item.d-flex.justify-content-between.align-items-center
+                  a(href="")  شركات
+                  span.badge.badge-primary.badge-pill 1
+
+              
+        
+    //End News-info
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    include include/script.pug

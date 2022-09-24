@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Droid Arabic Kufi";
+  src: url("../font/DroidKufi-Regular.ttf");
+}
+@font-face {
+  font-family: "Droid Arabic Kufi Bold";
+  src: url("../font/DroidKufi-Bold.ttf") ;
+}
+$first-color : #c7eafc;
+$Scand-color : #005c9c;
+$Thard-color : #f47920;
+$Four-color : #da511f;
+body {
+  font-family: 'Amiri', serif;
+  font-family: 'Droid Arabic Kufi', serif; 
+  direction: rtl;
+}
+
+h1, h2 , h3 , h4 ,h5, h6 {
+  font-family: "Droid Arabic Kufi Bold";
+}
+@import "content/header";
+@import "content/home";
+@import "content/Login";
+@import "content/Chairman";
+@import "content/Chairman";
+@import "content/team";
+@import "content/search";
+@import "content/registration";
+@import "content/gallary";
+@import "content/course";
+@import "content/news";
+@import "content/contcat";
+
+@import "content/footer";
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.view-mobile {
+  @media (max-width: 576px) {
+    display: none!important;
+  }
+  
+}
+body::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+
+.breadcrumb-nav {
+  background-color: #E9ECEF;
+  .breadcrumb {
+    margin-bottom: 0;
+    li {
+      a {
+        color: $Thard-color;
+      }
+    }
+  }
+}

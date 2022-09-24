@@ -1,0 +1,88 @@
+//- Start Header
+header.header
+  .container
+    .row
+      .col-lg-9
+        .info-shop.view-mobile
+          .time
+            i.far.fa-clock.fa-fw
+            |  من الأحد إلى الخميس : 9:00 – 13:50 / 17:00 - 20:30
+          .time الجمعة و السبت: اجازة
+          .time
+            i.fas.fa-mobile-alt.fa-fw
+            span(style="direction: ltr; display: inline-block;") +965 66923894
+      .col-lg-3
+        .info-shop.justify-content-end
+          .socail-media
+            a(href="")
+              i.fab.fa-facebook-f.fa-fw
+            a(href="")
+              i.fab.fa-instagram.fa-fw
+            a(href="")
+              i.fab.fa-twitter.fa-fw
+          #lang.time.lang
+            a(href="#")
+              | English
+        
+//- Start NavBar
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  .container
+    a.navbar-brand(href='index.html')
+      img(src="img/logo.png", alt="") 
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.mx-auto
+        li(class =  pageTitl === "Home" ? "nav-item  active" : " nav-item ")
+          a.nav-link(href='index.html')
+            | الرئيسية 
+        li(class =  pageTitl === "about" ? "nav-item  active drob" : " nav-item drob")
+          a.nav-link(href='#') من نحن 
+          ul.list-unstyled.drob-down
+            li(class =  pageTitlplus === "Chairman" ? "nav-item  active" : " nav-item ")
+              a(href="Chairman.html") 	كلمة رئيس المجلس الإدارة
+            li(class =  pageTitlplus === "BoardDirectors" ? "nav-item  active" : " nav-item ")
+              a(href="team.html") أعضاء مجلس الإدارة                                
+            li(class =  pageTitlplus === "objectives" ? "nav-item  active" : " nav-item ")
+              a(href="objectives.html") الاختصاصات والأهداف                          
+            li(class =  pageTitlplus === "InternalRegulation" ? "nav-item  active" : " nav-item ")
+              a(href="InternalRegulation.html") النظام الأساسي واللائحة الداخلية للمكاتب والدور الاستشارية.                                 
+            li(class =  pageTitlplus === "Practicing" ? "nav-item  active" : " nav-item ")
+              a(href="objectives.html") نظام مزاولة المهنة
+            li(class =  pageTitlplus === "ProfessionalCompanies" ? "nav-item  active" : " nav-item ")
+              a(href="InternalRegulation.html") النظام الأساسي واللائحة الداخلية للمكاتب والدور الاستشارية.                                 
+              
+        li(class =  pageTitl === "EngineeringOffices" ? "nav-item  active drob" : " nav-item drob")
+          a.nav-link(href='#') المكاتب الهندسية 
+          ul.list-unstyled.drob-down
+            li(class =  pageTitlplus === "Memberlogin" ? "nav-item  active" : " nav-item ")
+              a(href="login.html")
+                | تسجيل دخول الأعضاء
+            li(class =  pageTitlplus === "Conditions" ? "nav-item  active" : " nav-item ")
+              a(href="registration.html")
+                | شروط التسجيل للمكاتب                               
+            li(class =  pageTitlplus === "Search" ? "nav-item  active" : " nav-item ")
+              a(href="searchOffice.html")
+                | البحث عن المكاتب الهندسية                       
+            
+        li(class =  pageTitl === "media" ? "nav-item  active drob" : " nav-item drob")
+          a.nav-link(href='#') الإعلام
+          ul.list-unstyled.drob-down
+            li(class =  pageTitlplus === "News" ? "nav-item  active" : " nav-item ")
+              a(href="news.html")
+                | اخبارنا
+            li(class =  pageTitlplus === "Photos" ? "nav-item  active" : " nav-item ")
+              a(href="Photos.html")
+                | مكتبة الصور                              
+            li(class =  pageTitlplus === "Vedios" ? "nav-item  active" : " nav-item ")
+              a(href="Videos.html")
+                | الفيديو
+        li(class =  pageTitl === "course" ? "nav-item  active" : " nav-item ")
+          a.nav-link(href='course.html') الدورات والندوات
+        li(class =  pageTitl === "contcat" ? "nav-item  active" : " nav-item ")
+          a.nav-link(href='contcat.html') تواصل معنا
+        
+      ul.navbar-nav.my-2.my-lg-0
+        li.nav-item
+          a.nav-link.login(href='login.html') دخول الأعضاء  
+

@@ -1,0 +1,40 @@
+/* Start Search */
+section.Search  {
+  padding: 80px 0;
+  background: url(../img//testimonial-bg.jpg);
+  
+  form.form {
+    background-color: #fafafa;
+    box-shadow: 0 0 10px rgba(#000,0.2);
+    padding: 25px 15px;
+    border-radius: 10px;
+    .form-control  {
+      border-radius: 20px;
+    }
+    
+  }
+  .read-more {
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: $Thard-color;
+    color: #fff;
+    padding: 5px 25px;
+    box-shadow: 0 4px 0 0 $Four-color;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    margin: 0 10px ;
+    display: block;
+    text-align: center;
+    height: 40px;
+    font-size: 1.3em;
+    &:hover {
+      box-shadow: 0 0px 5px rgba(#000 ,0.3);
+    }
+  }
+  @media (max-width: 576px) { 
+    .card {
+      margin: 20px 0;
+    }
+  }
+}
+/* End Search */

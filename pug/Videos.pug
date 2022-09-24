@@ -1,0 +1,109 @@
+- var pageTitl = "media";
+- var pageTitlplus = "Vedios";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index.html') الرئيسية
+          li.breadcrumb-item
+            a(href='#') الإعلام
+          li.breadcrumb-item.active(aria-current='page') مكتبة الصور   
+
+    // End breadcrumb
+    // Start Contcat-info
+    section.Vedios-info
+      .container
+        .row
+          .col-lg-12 
+            ul.nav.justify-content-center.mb-5
+              li.nav-item
+                a.nav-link.active.btn-outline-light.btn.mx-2(href='#') الكل
+              li.nav-item
+                a.nav-link.btn-outline-light.btn.mx-2(href='#') المناسبات
+              li.nav-item
+                a.nav-link.btn-outline-light.btn.mx-2(href='#') الشركة
+      .container.content
+        .row
+        
+          .col-md-8
+            .vid-container
+
+              iframe#vid_frame(src='https://www.youtube.com/embed/9XnICtaIkPQ?rel=0&autoplay=1', frameborder='0', width='750', height='425', allowfullscreen='')
+          .col-md-4.list-images
+            // THE PLAYLIST
+            .vid-list-container
+              ol#vid-list.list-unstyled
+                li
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9XnICtaIkPQ?rel=0&autoplay=1'")
+                    span.No 1
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/9XnICtaIkPQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjidRm50exNXBKKd2A-DcVUBwNNQ')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                li.active
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LSzNwzRRK5M?rel=0&autoplay=1'")
+                    span.No 2
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/ncrExwGByBA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZ_1aU2Sts0IjX6QvPPpKYbOrM0A')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                li
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/sCvlO_Ruhfs?rel=0&autoplay=1'")
+                    span.No 3
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/sCvlO_Ruhfs/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAzdQfFZPYFmLltPghg7TsbQjVV0Q')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                li
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9XnICtaIkPQ?rel=0&autoplay=1'")
+                    span.No 1
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/9XnICtaIkPQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjidRm50exNXBKKd2A-DcVUBwNNQ')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                li
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LSzNwzRRK5M?rel=0&autoplay=1'")
+                    span.No 2
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/ncrExwGByBA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZ_1aU2Sts0IjX6QvPPpKYbOrM0A')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                li
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/sCvlO_Ruhfs?rel=0&autoplay=1'")
+                    span.No 3
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/sCvlO_Ruhfs/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAzdQfFZPYFmLltPghg7TsbQjVV0Q')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                
+                li
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9XnICtaIkPQ?rel=0&autoplay=1'")
+                    span.No 1
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/9XnICtaIkPQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCjidRm50exNXBKKd2A-DcVUBwNNQ')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                li
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LSzNwzRRK5M?rel=0&autoplay=1'")
+                    span.No 2
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/ncrExwGByBA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDZ_1aU2Sts0IjX6QvPPpKYbOrM0A')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                li
+                  a(href='javascript:void();', onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/sCvlO_Ruhfs?rel=0&autoplay=1'")
+                    span.No 3
+                    span.vid-thumb
+                      img( src='https://i.ytimg.com/vi/sCvlO_Ruhfs/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAzdQfFZPYFmLltPghg7TsbQjVV0Q')
+                    .desc إنشاءات عملاقة - أكبر وأسرع المشروعات الهندسية على الإطلاق
+                
+
+              
+        
+    //End Map
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    include include/script.pug

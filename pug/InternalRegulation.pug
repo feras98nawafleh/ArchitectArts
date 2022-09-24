@@ -1,0 +1,96 @@
+- var pageTitl = "about";
+- var pageTitlplus = "InternalRegulation";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index.html') الرئيسية
+          li.breadcrumb-item
+            a(href='#')  من نحن 
+          li.breadcrumb-item.active(aria-current='page') النظام الأساسي واللائحة الداخلية للمكاتب والدور الاستشارية.
+
+    // End breadcrumb
+    //start Photos
+    section.Chairman.InternalRegulation-page
+      .container.box
+        .row
+          .col-lg-12
+            h4.text-center النظام الأساسي واللائحة الداخلية
+            h4.text-center النظام الأساسي واللائحة الداخلية لاتحاد المكاتب الهندسية والدور الاستشارية الكويتية
+            h4.text-center المعدلين بالجمعية العمومية غير العادية بتاريخ 27/6/2019
+            h5.mb-5.text-center أولاً : النظام الأساسي لاتحاد المكاتب الهندسية والدور الاستشارية الكويتية
+          .col-lg-12
+            #accordionExample.accordion
+              .card
+                #headingOne.card-header
+                  h5(data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                    div الباب الأول
+                    div تكوين اتحاد المكاتب وأهدافه
+                    div مادة (1)
+
+   
+                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                  .card-body
+                    p تأسس اتحاد المكاتب الهندسية والدور الاستشارية الكويتية في يوم الأحد الموافق 23/4/2006 م بمقتضى القانون رقم 38 لسنة 1964 هيئة منظمة باسم (اتحاد المكاتب الهندسية والدور الإستشارية الكويتية) ومقره مدينة الكويت.
+                    p وبناء على التعديلات التي تمت على النظام الأساسي واللائحة الداخلية للاتحاد والمعتمدة في الجمعية العمومية الغير عادية التي عقدت يوم الاحد الموافق 6/7/2014 والجمعية العمومية الغير عادية التي عقدت يوم الاثنين الموافق 15/1/2018 والجمعية العمومية الغير عادية المنعقدة يوم الخميس الموافق 27/6/2019.
+
+
+
+              .card
+                #headingTwo.card-header
+                  h5(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                      div الباب الأول
+                      div اختصاصات وأهداف اتحاد المكاتب الهندسية والدور الاستشارية الكويتية.
+
+
+                      div مادة (2)
+                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                  .card-body
+                    ol
+                      li رعاية مصالح الأعضاء والدفاع عن حقوقهم .
+                      li تمثيل المكاتب الهندسية والدور الاستشارية أمام الجهات الرسمية والشركات والهيئات العربية والأجنبية .
+                      li دراسة وإعطاء المشورة في الأمور التي يكلف بها من قبل الأعضاء .
+                      li الاقتراح والتنسيق مع الجهات الرسمية المعنية فيما يتعلق بنظام مزاولة المهنة أو أية أنظمة مكملة لها.
+                      li اقتراح الأنظمة واللوائح التي تؤدي إلى رفع مستوى المهنة الهندسية .
+                      li السعي لدى الجهات الرسمية والشركات لمساندة ودعم المكاتب الهندسية والدور الاستشارية الكويتية عن طريق إسناد الأعمال الهندسية لها .
+                      li تقديم الدراسات الخاصة بالأمور المتعلقة بعمل المكاتب الهندسية والدور الاستشارية الكويتية.
+                      li اقتراح الأنظمة واللوائح والمسابقات الهندسية.
+                      li تمثيل المكاتب الهندسية والدور الاستشارية في كافة اللجان المهنية والتي تتعلق بنشاط أعضاء الاتحاد.
+                      li التعاون مع الجهات المختصة بشأن التشريعات التي تصدرها الحكومة بخصوص تنظيم أعمال المكاتب الهندسية والدور الاستشارية الكويتية والسعي لتشجيعها والحد من منافسة المكاتب العالمية الأجنبية لها.
+              .card
+                #headingThree.card-header
+                  h5(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                    div الباب الثاني
+                    div شروط قبول الأعضاء وانسحابهم وفصلهم
+                    div مادة (3)
+                #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+                  .card-body
+                    p يقبل عضوا في الاتحاد كعضو عامل للقيام بأعمال التصميم والاشراف وتراخيص البناء كل من يحمل ترخيص للقيام بأعمال تصميم واشراف وتراخيص البناء صادر من لجنة مزاولة المهنة ببلدية الكويت واتحاد المكاتب الهندسية والدور الاستشارية الكويتية كمكتب هندسي أو دار استشاري مصرح لها بمزاولة المهنة.
+                    p أن يكون حسن السير والسلوك بشهادة معتمدة من الجهات المختصة.
+                    p ألا يكون عضوا في اتحاد أصحاب أعمال أخر.
+                    p يقبل عضوا في الاتحاد كعضو منتسب المكاتب والدور والشركات الاستشارية الأجنبية.
+                    p يقبل عضوا في الاتحاد كعضو منتسب المكاتب والدور والشركات الاستشارية ذات الطابع الهندسي التخصصي على سبيل المثال وليس الحصر (هندسة كهربائية، هندسة ميكانيكية، تصميم داخلي... الخ) المحلية. ولا يحق لهم حضور أعمال الجمعية العمومية العادية وغير العادية، ولا يحق لهم المشاركة في الانتخابات (ترشح أو انتخاب) على أن يقدم العضو المنتسب اقرار وتعهد خطي بالموافقة على ما جاء بهذا البند.
+
+
+
+
+
+
+
+
+
+                
+    //End Photos
+    //-include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    include include/script.pug

@@ -1,0 +1,124 @@
+/* Start Map */
+section.map {
+  margin-bottom: -7px;
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+/* End Map */
+
+/* Start Footer */
+footer.contact-us {
+  padding: 40px 0;
+  background-color: #212121;
+  color: #fff;
+  font-size: 14px;
+  @media (max-width: 576px) { 
+    padding: 40px 15px;
+  }
+  .box-footer {
+    h4 {
+      position: relative;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: calc(100% - 2.5px);
+        right: 0;
+        width: 20%;
+        height: 5px;
+        background-color: $Thard-color;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        height: 1px;
+        background-color: $Thard-color;
+      }
+    }
+    
+    .info-footer {
+      color: #bbb;
+      p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #bbb;
+      }
+    }
+    .socail-media {
+      display: flex;
+      a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #bbb;
+        border-radius: 50%;color: #bbb;
+        margin: 15px 0;
+        margin-left: 15px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+          color: #fff;
+          background-color: $Thard-color;
+        }
+      }
+    }
+    .socail-links {
+      display: flex;
+      a{
+        display: block;
+        width: 40%;
+        transition: all 0.4s ease-in-out;
+        margin-left: 15px;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+    ul {
+      li {
+        
+        a {
+          display: block;
+          text-decoration: none;
+          color: #bbb;
+          position: relative;
+          margin-bottom: 10px;
+          transition: all 0.4s ease-in-out;
+          &::before {
+            content: '\f104';
+            right: -10px;
+            position: relative;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+          }
+          &:hover {
+            margin-right: 5px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Footer */
+footer.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  a{
+    color: $Thard-color;
+  }
+}
+/* Start Footer */

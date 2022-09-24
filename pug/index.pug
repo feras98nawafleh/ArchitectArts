@@ -1,0 +1,269 @@
+- var pageTitl = "Home";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    link(rel="stylesheet", href="css/owl.carousel.min.css")
+    link(rel="stylesheet", href="css/owl.theme.default.min.css")
+    include include/head.pug
+    
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    //- Start Slider
+    Section.slider-row
+      div(class="login-form view-mobile  wow animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="100")
+        form
+          h4  البحث عن المكاتب
+          .form-group
+            select#exampleFormControlSelect1.form-control
+              option المكاتب المحلية
+              option المكاتب الأجنبية 
+              option المكاتب المتخصصة 
+          .form-group
+            input.form-control(type='email', placeholder="اسم المكتب")
+          .form-group.form-check
+          button.btn.btn-default(type='submit') بحث
+
+      #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+          li(data-target='#carouselExampleCaptions', data-slide-to='1')
+          li(data-target='#carouselExampleCaptions', data-slide-to='2')
+          li(data-target='#carouselExampleCaptions', data-slide-to='2')
+        .carousel-inner
+          .carousel-item.active
+            .carousel-caption
+              h3(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")  تسجيل المكاتب المحلية في الكويت  
+              p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+              a(href="#" class=" wow animate__fadeInUp read-more" data-wow-duration="3s" data-wow-offset="100") اقراء المزيد
+          .carousel-item
+            .carousel-caption
+              h3(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")  تسجيل المكاتب المحلية في الكويت  
+              p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+              a(href="#" class=" wow animate__fadeInUp read-more" data-wow-duration="3s" data-wow-offset="100") اقراء المزيد
+          .carousel-item
+            .carousel-caption
+              h3(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")  تسجيل المكاتب المحلية في الكويت  
+              p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+              a(href="#" class=" wow animate__fadeInUp read-more" data-wow-duration="3s" data-wow-offset="100") اقراء المزيد
+          .carousel-item
+            .carousel-caption
+              h3(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")  تسجيل المكاتب المحلية في الكويت  
+              p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+              a(href="#" class=" wow animate__fadeInUp read-more" data-wow-duration="3s" data-wow-offset="100") اقراء المزيد
+        a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+    //- End Slider
+    // Start About Us
+    section.about
+      .container
+        .row
+          .col-lg-8
+            .about-info
+              h3(class=" wow animate__fadeInUpBig" data-wow-duration="2s" data-wow-offset="50") مرحبًا بك في اتحاد المكاتب الهندسية والدور الاستشارية الكويتية!
+              p(class=" wow animate__fadeInUpBig" data-wow-duration="2s" data-wow-offset="50") تعرَّف سريعًا على دليلك المعتمد في جميع المجالات والخدمات الهندسية..
+              .container-fluid
+                .row
+                  .col-lg-6
+                    div(class=" box-info-about wow animate__fadeInBottomRight" data-wow-duration="1s" data-wow-offset="100")
+                      .icon
+                        i.fas.fa-check-double.fa-fw.fa-5x
+                      h4.title من نحن؟
+                      p هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+                  .col-lg-6
+                    div(class=" box-info-about wow animate__fadeInBottomRight m-90" data-wow-duration="2s" data-wow-offset="100")
+                      .icon
+                        i.fas.fa-users.fa-fw.fa-5x
+                      h4.title 	كيف يمكننا مساعدتك؟
+                      p هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+          
+                  .col-lg-6
+                    div(class=" box-info-about wow animate__fadeInBottomRight mt-1" data-wow-duration="3s" data-wow-offset="100")
+                      .icon
+                        i.fab.fa-slideshare.fa-fw.fa-5x
+                      h4.title 	لماذا نحن؟
+                      p هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+                  .col-lg-6
+                    div(class=" box-info-about wow animate__fadeInBottomRight" data-wow-duration="4s" data-wow-offset="100")
+                      .icon
+                        i.fas.fa-tty.fa-fw.fa-5x
+                      h4.title 		كيف تتواصل معنا؟
+                      p هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
+          
+          .col-lg-4
+            .image
+              img.w-100(src="img/proud-worker-posing-with-his-construction (2).png", alt="")
+    // End About Us
+    //Start Advertising
+    section.Advertising
+      .container
+        .row
+          .col-lg-12
+            .Advertising-box.text-center
+              img.w-100(src="img/17838774751976075048.png", alt="")
+    //End Advertising
+    // Start category
+    section.category
+      .container
+        .row
+          div(class="col-lg-4 wow animate__flipInY" data-wow-duration="2s" data-wow-offset="100")
+            a.card-category.text-center(href="")
+              .image
+                img(src="img/category/management-service.png", alt="")
+              h5 خدمتنا 
+          div(class="col-lg-4 wow animate__flipInY" data-wow-duration="2s" data-wow-offset="100")
+            a.card-category.text-center(href="")
+              .image
+                img(src="img/category/online-course.png", alt="")
+              h5 احدث الدورات  
+          div(class="col-lg-4 wow animate__flipInY" data-wow-duration="2s" data-wow-offset="100")
+            a.card-category.text-center(href="")
+              .image
+                img(src="img/category/login.png", alt="")
+              h5 تسجيل الاعضاء 
+    // End category
+    // Start Number
+    section.Number
+      .container
+        .row
+          .col-lg-4
+            .Number-info
+              h4.Number-head نحن فخورون
+              h5.Number-title مع انجازنا
+          .col-lg-8
+            .container-fluid
+              .row
+                .col-lg-4.text-center
+                  h4.title-number 
+                    span.counter 375
+
+
+                  p.text المكاتب المشتركة 
+
+                .col-lg-4.text-center
+                  h4.title-number 
+                    span.counter 112
+
+                  p.text عدد الأعضاء 
+                .col-lg-4.text-center
+                  h4.title-number 
+                    span.counter 265
+
+                  p.text عدد الموظفين
+
+
+    // End Number
+    //Start News
+    section.news
+      .container
+        .row
+          .col-lg-9
+            h4 أحدث الأخبار
+            .container-fluid
+              .row
+                div(class="col-lg-6 wow animate__zoomIn" data-wow-duration="1s" data-wow-offset="100")
+                  .card
+                    .image
+                      img.w-100(src="img/news2.png", alt="")
+                    a.body-card(href="")
+                      h5 مستشفى جابر
+                      p يتضمن المشروع المقدرة قيمته بـ 1.6 مليار دولار، إنشاء مجمع مستشفيات يمتد على مساحة 47 ألف متر مربع، 
+                div(class="col-lg-6 wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="100")
+                  .card
+                    .image
+                      img.w-100(src="img/news1.png", alt="")
+                    a.body-card(href="") 
+                      h5 مدينة الكويت لسباقات السيارات
+                      p مع إرثها الحضاري العريق وقوتها الاقتصادية إضافة إلى انفتاحها المتزايد على الحضارة الأوروبية، 
+                div(class="col-lg-6 wow animate__zoomIn" data-wow-duration="1s" data-wow-offset="100")
+                  .card-Circle
+                    .icon
+                      img(src="img/category/newspaper.png", alt="")
+                    a.card-Circle-body(href="#") 
+                      h6.card-title القرار وزاري رقم (162) لسنة 2020 بشأن إصدار لائحة تنظيم الشركات المهنية الهندسية
+                div(class="col-lg-6 wow animate__zoomIn" data-wow-duration="1s" data-wow-offset="100")
+                  .card-Circle
+                    .icon
+                      img(src="img/category/newspaper.png", alt="")
+                    a.card-Circle-body(href="#") 
+                      h6.card-title اتحاد المكاتب الهندسية والدور الاستشارية الكويتية و وزارة الكهرباء والماء يفعلان مذكرة التفاهم بينهما لإزالة عقبات العمل الالكتروني
+                div(class="col-lg-6 wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="100")
+                  .card-Circle
+                    .icon
+                      img(src="img/category/newspaper.png", alt="")
+                    a.card-Circle-body(href="#") 
+                      h6.card-title اجتماع لجمعية العمومية العادية وغير العادية للاتحاد أقر بنودها
+                div(class="col-lg-6 wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="100")
+                  .card-Circle
+                    .icon
+                      //-i.far.fa-newspaper.fa-fw.fa-3x
+                      img(src="img/category/newspaper.png", alt="")
+                    a.card-Circle-body(href="#") 
+                      h6.card-title مبروك لدار مكتب المهندس مبارك الدويلة للاستشارات الهندسية 
+
+          .col-lg-3
+            .Advertising-box.text-center
+              #carouselExampleSlidesOnly.carousel.slide.carousel-fade(data-ride='carousel')
+                .carousel-inner
+                  .carousel-item.active
+                    img.d-block.w-100(src='img/18016251751727309316.png', alt='...')
+                  .carousel-item
+                    img.d-block.w-100(src='img/z3.PNG', alt='...')
+                  .carousel-item
+                    img.d-block.w-100(src='img/z1.PNG', alt='...')
+    //End News
+    //Start Our Logo
+    section.our-logo
+      .container
+        h4 المكاتب الهندسية
+
+        .owl-carousel.owl-theme
+          a.item(href="Office.html")
+            .image
+              img(src="img/logos/partner-16.png", alt="")
+            //- h5 دار المشاريع اللإستشارات الهندسية 
+          a.item(href="Office.html")
+            .image
+              img(src="img/logos/partner-22.png", alt="")
+            //- h5 DARMASS
+          a.item(href="Office.html")
+            .image
+              img(src="img/logos/partner-32.png", alt="")
+            //- h5 دار الهدية للإستشارات الهندسية
+          a.item(href="Office.html")
+            .image
+              img(src="img/logos/partner-41.png", alt="")
+            //- h5 KEO
+          a.item(href="Office.html")
+            .image
+              img(src="img/logos/partner-16.png", alt="")
+            //- h5 دار المشاريع اللإستشارات الهندسية 
+          a.item(href="Office.html")
+            .image
+              img(src="img/logos/partner-22.png", alt="")
+            //- h5 DARMASS
+          a.item(href="Office.html")
+            .image
+              img(src="img/logos/partner-32.png", alt="")
+            //- h5 دار الهدية للإستشارات الهندسية
+          a.item(href="Office.html")
+            .image
+              img(src="img/logos/partner-41.png", alt="")
+            //- h5 KEO
+          
+            
+
+    //StaEndrt Our Logo
+    
+    //-include include/scrollTop.pug
+    //End partners
+    include include/footer.pug
+    // Start Scripts
+    include include/script.pug
+    script#viewmobilscript.
+      new WOW().init();

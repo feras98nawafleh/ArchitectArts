@@ -1,0 +1,55 @@
+- var pageTitl = "EngineeringOffices";
+- var pageTitlplus = "Office";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index.html') الرئيسية
+          li.breadcrumb-item.active(aria-current='page') المكاتب الهندسية    
+
+    // End breadcrumb
+    
+    // Start Office
+    section.Search.pt-5
+      .container.box-search 
+        .row
+          .col-lg-12
+            .card
+              .row.no-gutters
+                .col-md-4
+                  img.w-100(src='img/635969869280020859_ab2308.jpg', alt='...')
+                .col-md-8
+                  .card-body
+                    h5.card-title دار الهدية للإستشارات الهندسية
+                    p.card-text
+                      | لقد الشركة عام 1995 حيث بدأ الدار في تقديم خدماته الفنية في مجالات التخطيط العمراني، التصميم العمراني ودراسات الجدوى، الهندسة المعمارية، التصميم الداخلي، والتصميم الانشائي، التصميم الهندسي، إدارة المشاريع الانشائية والاشراف على التنفيذ.
+                    p.card-text.addres
+                      i.fas.fa-map-marker-alt
+                      |  الشرق ، مدينة الكويت مجمع الأوقاف - البرج 12 مكتب 24،25،26
+                    p.card-text.email
+                      i.far.fa-envelope
+                      |  alhadiah@alhadiah.net
+                    p.card-text.phone
+                      i.fas.fa-phone-volume
+                      |  +965 22445535
+    // Start Office
+          
+                
+
+              
+        
+    //End Map
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    include include/script.pug

@@ -1,0 +1,132 @@
+- var pageTitl = "about";
+- var pageTitlplus = "BoardDirectors";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index.html') الرئيسية
+          li.breadcrumb-item
+            a(href='#')  من نحن 
+          li.breadcrumb-item.active(aria-current='page') أعضاء مجلس الإدارة  
+
+    // End breadcrumb
+    // Start Team
+    section.ourTeam
+      .container
+        h2.text-center أعضاء مجلس الإدارة   
+        .row
+          .col-md-3.text-center
+            .team
+              img(src='../img/unnamed2.png' alt='')
+              .body-team
+                h5 م. بدر يوسف السلمان	
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg
+                a(href="") 
+                  i.fab.fa-twitter.fa-lg
+                a(href="")
+                  i.fab.fa-google-plus-g.fa-lg
+                p رئيس مجلس الإدارة
+
+          .col-md-3.text-center
+            .team
+              img(src='../img/s2.png' alt='')
+              .body-team
+                h5 م. مازن الصانع
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg
+                a(href="") 
+                  i.fab.fa-twitter.fa-lg
+                a(href="")
+                  i.fab.fa-google-plus-g.fa-lg
+                p نائب رئيس مجلس الادارة
+
+          .col-md-3.text-center
+            .team
+              img(src='../img/z322.png' alt='')
+              .body-team
+                h5 م. فتوح العصفور 	
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg
+                a(href="") 
+                  i.fab.fa-twitter.fa-lg
+                a(href="")
+                  i.fab.fa-google-plus-g.fa-lg
+                p أمين السر
+          .col-md-3.text-center
+            .team
+              img(src='../img/s2.png' alt='')
+              .body-team
+                h5 م. جابر جواد أبو الحسن	
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg
+                a(href="") 
+                  i.fab.fa-twitter.fa-lg
+                a(href="")
+                  i.fab.fa-google-plus-g.fa-lg
+                p أمين الصندوق
+          .col-md-3.text-center
+            .team
+              img(src='../img/unnamed2.png' alt='')
+              .body-team
+                h5 	م. محمد الشايع	
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg
+                a(href="") 
+                  i.fab.fa-twitter.fa-lg
+                a(href="")
+                  i.fab.fa-google-plus-g.fa-lg
+                p  عضو مجلس الإدارة
+
+          .col-md-3.text-center
+            .team
+              img(src='../img/s2.png' alt='')
+              .body-team
+                h5 م. نزار عبد الرزاق العنجري
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg
+                a(href="") 
+                  i.fab.fa-twitter.fa-lg
+                a(href="")
+                  i.fab.fa-google-plus-g.fa-lg
+                p  عضو مجلس الإدارة
+
+          .col-md-3.text-center
+            .team
+              img(src='../img/z322.png' alt='')
+              .body-team
+                h5 م. فتوح العصفور 	
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg
+                a(href="") 
+                  i.fab.fa-twitter.fa-lg
+                a(href="")
+                  i.fab.fa-google-plus-g.fa-lg
+                p عضو مجلس الإدارة
+          .col-md-3.text-center
+            .team
+              img(src='../img/s2.png' alt='')
+              .body-team
+                h5 م. جابر جواد أبو الحسن	
+                a(href="")
+                  i.fab.fa-facebook-f.fa-lg
+                a(href="") 
+                  i.fab.fa-twitter.fa-lg
+                a(href="")
+                  i.fab.fa-google-plus-g.fa-lg
+                p عضو مجلس الإدارة
+    // End Team
+
+    //-include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    include include/script.pug

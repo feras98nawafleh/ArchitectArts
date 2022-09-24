@@ -1,0 +1,60 @@
+- var pageTitl = "course";
+<!DOCTYPE html>
+html(lang="AR")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='index') الرئيسية
+          li.breadcrumb-item.active(aria-current='page') الدورات والندوات  
+
+    // End breadcrumb
+    // Start Contcat-info
+    section.course-info
+      .container
+        .row
+          .col-lg-4
+            .card
+              img.card-img-top(src='../img/Autodesk-AutoCAD.jpg', alt='...')
+              .card-body.text-center
+                h5.card-title.text-center.mb-5 Autodesk AutoCad 
+                a.read-more.text-center(href="courseInfo.html") تفصيل الدورة
+              .card-footer
+                p.card-text
+                  small.text-muted اخر تحديث منذ 3 ايام
+          .col-lg-4
+            .card
+              img.card-img-top(src='../img/Autodesk-Revit-Structure.jpg', alt='...')
+              .card-body.text-center
+                h5.card-title.text-center.mb-5 Autodesk Revit structural 
+                a.read-more.text-center(href="courseInfo.html") تفصيل الدورة
+              .card-footer
+                p.card-text
+                  small.text-muted اخر تحديث منذ 3 ايام
+          .col-lg-4
+            .card
+              img.card-img-top(src='../img/Autodesk-Robot-Structural-Analysis.jpg', alt='...')
+              .card-body.text-center
+                h5.card-title.text-center.mb-5 Robot Structural Analysis 
+                a.read-more.text-center(href="courseInfo.html") تفصيل الدورة
+              .card-footer
+                p.card-text
+                  small.text-muted اخر تحديث منذ 3 ايام
+            
+
+
+              
+        
+    //End Map
+    //include include/scrollTop.pug
+    include include/footer.pug
+    // Start Scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    include include/script.pug

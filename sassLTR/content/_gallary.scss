@@ -1,0 +1,146 @@
+/* Start Photos */
+.Photos {
+  padding: 80px 0;
+  padding-top: 250px;
+  position: relative;
+  background: url(../img//testimonial-bg.jpg);
+  @media (max-width: 767.98px) {
+    padding-top: 140px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 100%;
+    height: 250px;
+    background: url(../img/18948.jpg) no-repeat center center ;
+    background-size: cover;
+    @media (max-width: 767.98px) {
+      background-size: 100%;
+      height: 140px;
+    }
+  }
+  ul.nav {
+    margin: 30px 0;
+    li.nav-item {
+      margin-right: 10px;
+      margin-left: 10px;
+      @media (max-width: 576px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .my-shuffle-container {
+    .aspect__inner {
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* End photos */
+
+/* Start Vedios-info */
+section.Vedios-info {
+  padding: 80px 0;
+  padding-top: 340px;
+  background-color: #333;
+  position: relative;
+  background: linear-gradient(-135deg, rgba(212,89,91,1) 0%, rgba(142,53,86,1) 100%);
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    background: url(../img/videos.png) no-repeat center center ;
+    background-size: cover;
+    @media (max-width: 767.98px) {
+      background-size: 100%;
+      height: 140px;
+    }
+  }
+  .content {
+    background-color: #333;
+    box-shadow: 0 0 25px rgba(#000,0.5);
+    border-radius: 10px;
+    
+  }
+    .vid-container {
+      
+    }
+    .vid-list-container {
+      height: 400px;
+      padding: 10px 0;
+      background-color: #333;
+      overflow-y: scroll;
+      border: 1px solid #bbb;
+      margin: 10px;
+      margin-right: -5px;
+      li {
+        transition: all .7s ease-in-out;
+        margin-bottom: 10px;
+        padding: 0 5px;
+        /* &:hover {
+          background-color: #444;
+          transform: translate(-10px, 0);
+        } */
+      }
+      li.active {
+        background-color: rgba(255, 0 , 0 , 0.8);
+        /* transform: translate(20px, 0); */
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        span.No {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 5%;
+        }
+        .vid-thumb {
+          width: 30%;
+          img {
+            width: 100%;
+          }
+        }
+        .desc {
+          display: inline-block;
+          padding-left: 20px;
+          width: 75%;
+          font-size: 0.8em;
+          padding: 13px 5px;
+        }
+      }
+    }
+  @media (max-width: 576px) { 
+    padding-top: 150px;
+    .vid-container {
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}
+/* End Vedios-info */
+
+.vid-list-container::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 5px;
+
+}
+
+.vid-list-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.vid-list-container::-webkit-scrollbar-thumb {
+background-color: $Thard-color;
+outline: 1px solid slategrey;
+}
